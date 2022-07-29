@@ -1,0 +1,806 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background: #fafafa;
+  width: 100%;
+  height: auto;
+  user-select: none;
+
+  /* font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;*/
+}
+
+.container {
+  font-family: "Questrial", sans-serif;
+  width: 100%;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.5s ease-in-out;
+}
+
+/* END OF HTML DOCUMENT STYLE*/
+
+.nav-container {
+  width: 100%;
+  height: auto;
+  display: absolute;
+  position: fixed;
+  align-items: center;
+  z-index: 99;
+}
+
+nav {
+  width: 100%;
+  height: 4em;
+  display: fixed;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  background: #fff;
+  z-index: 99;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-contents {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-logo-container {
+  width: fit-content;
+  height: fit-content;
+  display: absolute;
+  position: relative;
+  padding: 0.5em;
+}
+
+.nav-logo-h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  width: fit-content;
+  height: fit-content;
+  display: absolute;
+  position: relative;
+}
+
+.nav-ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 1em;
+}
+
+.nav-li {
+  padding: 2em 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-li-careers {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-li-careers:hover .dropdown-careers-content {
+  display: inline-block;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.dropdown-careers-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.dropdown-careers-content-a {
+  display: block;
+  padding: 1em 0.5em 1em 0.5em;
+  text-decoration: none;
+  color: #242424;
+  border-bottom: 1px solid #cecece;
+}
+
+.dropdown-careers-content-a:hover {
+  color: #ff0000;
+}
+
+.nav-li:hover {
+  margin-top: -5px;
+}
+
+.nav-a {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #242424;
+}
+
+.nav-li-login {
+  padding: 0.5em;
+}
+
+.nav-li-register {
+  padding: 0.5em;
+}
+
+.nav-a-login {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fffafa;
+  background-color: #eb0000;
+  border-radius: 100px;
+  padding: 0.4em 1.4em;
+}
+
+.nav-a-login:hover {
+  background-color: #d60000;
+  color: #fffafa;
+}
+
+.nav-a-register {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #242424;
+}
+
+.nav-a-register:hover {
+  color: #eb0000;
+}
+
+/* END OF NAVIGATION STYLE*/
+.hero-container {
+  width: 100%;
+  height: 30em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url(../img/LandingPage-IMG/LandingPage.png) center center fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: 1s ease-in-out;
+  padding-top: 20vh;
+  filter: grayscale(80%);
+  opacity: 0.9;
+}
+
+.hero-container:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  color: #fffafa;
+}
+
+.hero-text-container {
+  width: 50%;
+  height: auto;
+  display: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  padding-left: 1em;
+  font-weight: 200;
+}
+
+.hero-h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  font-weight: 200;
+}
+
+.hero-button {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fffafa;
+  background-color: #eb0000;
+  border-radius: 100px;
+  padding: 0.4em 1.4em;
+  margin: 2em 0 0 25%;
+}
+
+.hero-button:hover {
+  background-color: #d60000;
+}
+
+/* END OF HERO STYLE*/
+
+.who-we-are {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 1em 1em 1em;
+  background: #fffafa;
+}
+
+.who-we-are-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-we-are-img-container-left {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.who-we-are-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.who-we-are-text-container-right {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.who-we-are-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  font-weight: 600;
+  color: #242424;
+}
+
+.who-we-are-p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding: 1em;
+  width: fit-content;
+  word-wrap: normal;
+  text-align: center;
+  color: #242424;
+}
+
+.no-of-emp-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  padding: 1em;
+}
+
+.no-of-exp {
+  padding: 1em;
+  border-left: #c20000 solid 0.3em;
+}
+
+.no-of-exp-h1-1 {
+  font-family: "Inter", sans-serif;
+  color: #c20000;
+}
+
+.no-of-emp {
+  padding: 1em;
+  border-left: #c20000 solid 0.3em;
+}
+
+.no-of-emp-h1-1 {
+  font-family: "Inter", sans-serif;
+  color: #c20000;
+}
+
+.no-of-exp-p-1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #242424;
+}
+
+/* END OF WHO WE ARE STYLE*/
+.WhyCommuniX {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background: #fffafa;
+  padding: 1em;
+  margin-top: 5em;
+}
+
+.WhyCommuniX-container {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.WhyCommuniX-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.WhyCommuniX-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  padding: 0.5em;
+  font-weight: 600;
+  color: #242424;
+}
+
+.WhyCommuniX-cards-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.card {
+  width: 30em;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffafa;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.01);
+  background-color: #ffe0e0;
+  border-radius: 5px;
+}
+
+.card:hover .card-image-container {
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+}
+
+.card-image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px 0 0 10px;
+  background-color: #ffcccc;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.card-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 0.5em;
+  font-weight: 600;
+  color: #b0192b;
+}
+
+.card-p {
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: 300;
+  padding: 0.5em;
+  font-weight: 300;
+}
+
+/* END OF SERVICES STYLE*/
+.testimonial {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  background: #fffafa;
+  margin-top: 5em;
+}
+
+.testimonial-container {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.testimonial-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.testimonial-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  padding: 0.5em;
+  font-weight: 600;
+  color: #242424;
+}
+
+.testimonial-cards-container {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  background: url("../img/Testimonials-IMG/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffe0e0;
+  padding: 1em;
+
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.testimonial-cards-container::-webkit-scrollbar {
+  height: 1em;
+}
+
+.testimonial-cards-container::-webkit-scrollbar-track {
+  background-color: #ffe0e0;
+}
+
+.testimonial-cards-container::-webkit-scrollbar-thumb {
+  background-color: #ff5252;
+}
+
+.testimonial-card {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  padding: 1em;
+  background: #fffafa;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.testimonial-card:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  background-color: #ffe0e0;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.testimonial-card-image-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: left;
+  padding: 1em;
+}
+
+.testimonial-card-image {
+  width: 100%;
+  height: auto;
+  color: #242424;
+}
+
+.testimonial-card-text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial-card-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  padding: 0.5em;
+  font-weight: 900;
+  color: #c20000;
+}
+
+.testimonial-card-p {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.5em;
+  color: #242424;
+}
+
+/* END OF TESTIMONIAL STYLE*/
+.footer-container {
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  align-items: right;
+  width: 100%;
+  height: fit-content;
+  right: 0;
+  top: 105%;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.footer-container-top {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 2em 1em;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-h1 {
+  font-size: 2em;
+  color: #242424;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.footer-container-middle {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 1em 1em 2em 1em;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-h2 {
+  font-size: 1em;
+  color: #242424;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  word-wrap: normal;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.footer-btn-lets-connect {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: #eb0000;
+  border-radius: 100px;
+  padding: 1em 1.5em;
+  border: none;
+  color: #ffffff;
+}
+
+.footer-btn-lets-connect:hover {
+  background-color: #d60000;
+}
+
+.footer-horizontal-line {
+  width: 90%;
+  border-bottom: #d8cfcf 1px solid;
+  padding: 1em;
+}
+
+.footer-container-bottom {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding: 1em 0;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container-bottom-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footer-brand-container {
+  display: absolute;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2em;
+}
+
+.footer-brand-name {
+  font-size: 2em;
+  color: #d60000;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: "Questrial", sans-serif;
+  width: fit-content;
+  height: auto;
+}
+
+.footer-nav-ul {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em;
+  left: 25%;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-nav-li {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-nav-a {
+  color: #242424;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.socials-container {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 0.2em;
+  right: 2em;
+  font-family: "Inter", sans-serif;
+}
+
+.bx {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2em;
+  color: #eb0000;
+}
+
+.footer-container-bottom-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.bottom-left-h4 {
+  font-size: 0.7em;
+  color: #242424;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  word-wrap: normal;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 3em;
+  bottom: 1em;
+}
+
+.bottom-right {
+  font-size: 0.7em;
+  position: absolute;
+  right: 3em;
+  bottom: 1em;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Inter", sans-serif;
+}
+/* END OF FOOTER CONTENT */
