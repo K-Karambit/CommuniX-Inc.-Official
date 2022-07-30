@@ -13,13 +13,13 @@ body::-webkit-scrollbar {
 
 body {
   font-family: "Questrial", sans-serif;
-  background: #fafafa;
+  background: #f0f0f0;
   width: 100%;
   height: auto;
   user-select: none;
 
   /* font-family: 'Inter', sans-serif;
-      font-family: 'Poppins', sans-serif;*/
+                font-family: 'Poppins', sans-serif;*/
 }
 
 .container {
@@ -252,362 +252,115 @@ nav {
 
 /* END OF HERO STYLE*/
 
-.who-we-are {
-  width: 100%;
-  height: auto;
+.announcement-and-events-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5em 1em 1em 1em;
-  background: #fffafa;
-}
-
-.who-we-are-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.who-we-are-img-container-left {
-  width: 40%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.who-we-are-img {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
-}
-
-.who-we-are-text-container-right {
-  width: 70%;
-  height: auto;
-  display: flex;
+  position: relative;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.who-we-are-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  font-weight: 600;
-  color: #242424;
-}
-
-.who-we-are-p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  padding: 1em;
-  width: fit-content;
-  word-wrap: normal;
-  text-align: center;
-  color: #242424;
-}
-
-.no-of-emp-container {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
+}
+
+.announcement-and-events-card-container {
+  display: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
-  gap: 5em;
-  padding: 1em;
-}
-
-.no-of-exp {
-  padding: 1em;
-  border-left: #c20000 solid 0.3em;
-}
-
-.no-of-exp-h1-1 {
-  font-family: "Inter", sans-serif;
-  color: #c20000;
-}
-
-.no-of-emp {
-  padding: 1em;
-  border-left: #c20000 solid 0.3em;
-}
-
-.no-of-emp-h1-1 {
-  font-family: "Inter", sans-serif;
-  color: #c20000;
-}
-
-.no-of-exp-p-1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  color: #242424;
-}
-
-/* END OF WHO WE ARE STYLE*/
-.WhyCommuniX {
   width: 100%;
   height: auto;
-  justify-content: center;
-  align-items: center;
-  background: #fffafa;
   padding: 1em;
   margin-top: 5em;
 }
 
-.WhyCommuniX-container {
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.WhyCommuniX-title-container {
-  width: 100%;
-  height: auto;
+.announcement-and-events-cards-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.WhyCommuniX-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
-  color: #242424;
-}
-
-.WhyCommuniX-cards-container {
-  width: 100%;
-  height: auto;
-  display: flex;
+  position: relative;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
-.card {
-  width: 30em;
-  height: fit-content;
+.announcement-and-events-card {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fffafa;
-  cursor: pointer;
+  width: 40%;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #ffffff;
+  margin: 1em;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.card:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.01);
-  background-color: #ffe0e0;
-  border-radius: 5px;
+.announcement-and-events-card:hover {
+  background-color: #ff8f8f;
 }
 
-.card:hover .card-image-container {
-  transition: all 0.5s ease-in-out;
-  background-color: transparent;
+.announcement-and-events-img-header {
+  position: relative;
+  width: 100%;
+  height: fit-content;
 }
 
-.card-image-container {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  padding: 1em;
-  border-radius: 10px 0 0 10px;
-  background-color: #ffcccc;
-}
-
-.card-image {
+.announcement-and-events-img {
   width: 100%;
   height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
-.card-text-container {
+.announcement-and-events-description {
+  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  height: fit-content;
+  text-align: left;
   padding: 1em;
 }
 
-.card-h1 {
+.announcement-event-title-h1 {
   font-family: "Inter", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
-  color: #b0192b;
+  padding-top: 1em;
 }
 
-.card-p {
-  font-family: "Poppins", sans-serif;
-  width: fit-content;
-  font-size: 0.8em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 300;
-}
-
-/* END OF SERVICES STYLE*/
-.testimonial {
-  width: 100%;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  background: #fffafa;
-  margin-top: 5em;
-}
-
-.testimonial-container {
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-.testimonial-title-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  padding-bottom: 2em;
-}
-
-.testimonial-h1 {
+.supporting-details-h3 {
   font-family: "Inter", sans-serif;
-  font-size: 3em;
+  font-size: 0.9em;
   font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
-  color: #242424;
+  padding-top: 1em;
+  color: #808080;
 }
 
-.testimonial-cards-container {
-  width: 100%;
-  height: 25em;
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  background: url("../img/Testimonials-IMG/wave.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #ffe0e0;
-  padding: 1em;
-  padding-top: 4em;
-
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.testimonial-cards-container::-webkit-scrollbar {
-  height: 1em;
-}
-
-.testimonial-cards-container::-webkit-scrollbar-track {
-  background-color: #ffe0e0;
-}
-
-.testimonial-cards-container::-webkit-scrollbar-thumb {
-  background-color: #ff5252;
-}
-
-.testimonial-card {
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
+.announcement-and-events-description-p {
   position: relative;
-  align-items: center;
-  cursor: pointer;
-  padding: 1em;
-  background: #fffafa;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-
-}
-
-.testimonial-card:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
-  background-color: #ffe0e0;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-.testimonial-card-image-container {
-  width: 40%;
-  height: auto;
-  display: flex;
-  align-items: left;
-  padding: 1em;
-}
-
-.testimonial-card-image {
-  width: 100%;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+  word-wrap: normal;
+  padding-top: 1em;
   color: #242424;
 }
 
-.testimonial-card-text-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
-.testimonial-card-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 900;
-  color: #c20000;
-}
+/* END OF CAREERS STYLE*/
 
-.testimonial-card-p {
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 600;
-  padding: 0.5em;
-  color: #242424;
-}
-
-/* END OF TESTIMONIAL STYLE*/
 .footer-container {
-  display: flex;
-  position: absolute;
-  justify-content: right;
-  align-items: right;
+  position: relative;
   width: 100%;
   height: fit-content;
-  right: 0;
-  top: 105%;
+  top: 5em;
 }
 
 footer {

@@ -13,13 +13,13 @@ body::-webkit-scrollbar {
 
 body {
   font-family: "Questrial", sans-serif;
-  background: #fafafa;
+  background: #f0f0f0;
   width: 100%;
   height: auto;
   user-select: none;
 
   /* font-family: 'Inter', sans-serif;
-      font-family: 'Poppins', sans-serif;*/
+     font-family: 'Poppins', sans-serif;*/
 }
 
 .container {
@@ -251,327 +251,87 @@ nav {
 }
 
 /* END OF HERO STYLE*/
-
-.who-we-are {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5em 1em 1em 1em;
-  background: #fffafa;
-}
-
-.who-we-are-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.who-we-are-img-container-left {
-  width: 40%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.who-we-are-img {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
-}
-
-.who-we-are-text-container-right {
-  width: 70%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.who-we-are-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  font-weight: 600;
-  color: #242424;
-}
-
-.who-we-are-p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  padding: 1em;
-  width: fit-content;
-  word-wrap: normal;
-  text-align: center;
-  color: #242424;
-}
-
-.no-of-emp-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5em;
-  padding: 1em;
-}
-
-.no-of-exp {
-  padding: 1em;
-  border-left: #c20000 solid 0.3em;
-}
-
-.no-of-exp-h1-1 {
-  font-family: "Inter", sans-serif;
-  color: #c20000;
-}
-
-.no-of-emp {
-  padding: 1em;
-  border-left: #c20000 solid 0.3em;
-}
-
-.no-of-emp-h1-1 {
-  font-family: "Inter", sans-serif;
-  color: #c20000;
-}
-
-.no-of-exp-p-1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  color: #242424;
-}
-
-/* END OF WHO WE ARE STYLE*/
-.WhyCommuniX {
+.services-container {
   width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
-  background: #fffafa;
-  padding: 1em;
-  margin-top: 5em;
+  padding: 1em 0;
 }
 
-.WhyCommuniX-container {
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.WhyCommuniX-title-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
-
-.WhyCommuniX-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
-  color: #242424;
-}
-
-.WhyCommuniX-cards-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2em;
-}
-
-.card {
-  width: 30em;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #fffafa;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.01);
-  background-color: #ffe0e0;
-  border-radius: 5px;
-}
-
-.card:hover .card-image-container {
-  transition: all 0.5s ease-in-out;
-  background-color: transparent;
-}
-
-.card-image-container {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  padding: 1em;
-  border-radius: 10px 0 0 10px;
-  background-color: #ffcccc;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-}
-
-.card-text-container {
+.services-content-container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.our-services-h2-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 1em;
 }
 
-.card-h1 {
+.our-service-description-h2 {
   font-family: "Inter", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
-  color: #b0192b;
-}
-
-.card-p {
-  font-family: "Poppins", sans-serif;
-  width: fit-content;
-  font-size: 0.8em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 300;
-}
-
-/* END OF SERVICES STYLE*/
-.testimonial {
-  width: 100%;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  background: #fffafa;
-  margin-top: 5em;
-}
-
-.testimonial-container {
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-.testimonial-title-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  padding-bottom: 2em;
-}
-
-.testimonial-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 600;
+  padding-top: 1em;
   color: #242424;
 }
 
-.testimonial-cards-container {
+.service-card-container {
   width: 100%;
-  height: 25em;
+  height: auto;
+  padding: 1em 0;
+}
+
+.service-card-container-content {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  gap: 2em;
-  background: url("../img/Testimonials-IMG/wave.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #ffe0e0;
-  padding: 1em;
-  padding-top: 4em;
-
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.testimonial-cards-container::-webkit-scrollbar {
-  height: 1em;
-}
-
-.testimonial-cards-container::-webkit-scrollbar-track {
-  background-color: #ffe0e0;
-}
-
-.testimonial-cards-container::-webkit-scrollbar-thumb {
-  background-color: #ff5252;
-}
-
-.testimonial-card {
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: space-around;
   align-items: center;
-  cursor: pointer;
   padding: 1em;
-  background: #fffafa;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
-.testimonial-card:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
-  background-color: #ffe0e0;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-.testimonial-card-image-container {
-  width: 40%;
+.service-card {
+  width: 19em;
   height: auto;
   display: flex;
-  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
+  border-radius: 10px;
 }
 
-.testimonial-card-image {
+
+.service-header-img-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-img {
   width: 100%;
   height: auto;
-  color: #242424;
+  padding: 1em 0;
 }
 
-.testimonial-card-text-container {
+.service-description {
   width: 100%;
   height: auto;
   display: flex;
@@ -579,35 +339,29 @@ nav {
   text-align: center;
 }
 
-.testimonial-card-h1 {
+.service-h1 {
   font-family: "Inter", sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  padding: 0.5em;
-  font-weight: 900;
-  color: #c20000;
-}
-
-.testimonial-card-p {
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
+  padding-top: 1em;
   font-weight: 600;
-  padding: 0.5em;
   color: #242424;
 }
 
-/* END OF TESTIMONIAL STYLE*/
+.service-description-p {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  padding-top: 1em;
+  font-weight: 300;
+  color: #242424;
+}
+
+/* END OF CAREERS STYLE*/
+
 .footer-container {
-  display: flex;
-  position: absolute;
-  justify-content: right;
-  align-items: right;
+  position: relative;
   width: 100%;
   height: fit-content;
-  right: 0;
-  top: 105%;
+  top: 5em;
 }
 
 footer {

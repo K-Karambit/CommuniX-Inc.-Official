@@ -310,7 +310,7 @@ nav {
 }
 
 .collage-img-1:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(25%);
   z-index: 99;
 }
 
@@ -323,9 +323,15 @@ nav {
 }
 
 .collage-img-2:hover {
-  transform: scale(2);
+  transform: scale(2) translateX(-25%);
   z-index: 99;
 }
+
+.collage-img-bottom:hover {
+  transform: scale(2) translateX(-25%) translateY(-25%);
+  z-index: 99;
+}
+
 
 /* END OF OUR TEAM STYLE*/
 .about {
