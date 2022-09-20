@@ -349,7 +349,7 @@ textarea {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: left;
   padding: 1em;
@@ -360,7 +360,7 @@ textarea {
   font-family: "Inter", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
-  width: auto;
+  width: fit-content;
   border-radius: 10px;
   background-color: #ffe0e0;
   margin: 0.5em;
@@ -368,15 +368,6 @@ textarea {
 
 .bx1-a:hover {
   background-color: #ffb3b3;
-}
-
-span {
-  font-family: "Inter", sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  width: fit-content;
-  border-radius: 10px;
-  color: #242424;
 }
 
 .bx1 {
