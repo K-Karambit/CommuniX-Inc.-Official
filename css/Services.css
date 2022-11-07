@@ -89,6 +89,13 @@ nav {
   position: relative;
 }
 
+.nav-links-login-register-btn {
+  width: fit-content;
+  height: fit-content;
+  display: absolute;
+  position: relative;
+}
+
 .nav-ul {
   width: fit-content;
   height: fit-content;
@@ -149,6 +156,11 @@ nav {
   color: #242424;
 }
 
+.nav-a-services {
+  color: #ff0000;
+  font-weight: 600;
+}
+
 .nav-li-login {
   padding: 0.5em;
 }
@@ -180,6 +192,17 @@ nav {
 }
 
 .nav-a-register:hover {
+  color: #eb0000;
+}
+
+.retrieveId-h1 {
+  color: #242424;
+  padding: 1em;
+  cursor: pointer;
+  display: none;
+}
+
+.retrieveId-h1:hover {
   color: #eb0000;
 }
 
@@ -315,7 +338,6 @@ nav {
   padding: 1em;
   border-radius: 10px;
 }
-
 
 .service-header-img-container {
   width: 100%;
@@ -558,4 +580,91 @@ footer {
   height: fit-content;
   font-family: "Inter", sans-serif;
 }
+
+/* start of buger menu */
+.Dropdown-menu {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
 /* END OF FOOTER CONTENT */
+
+/*Responsive*/
+
+@media only screen and (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-logo-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  #hamburger {
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+
+  /*Hamburger Design*/
+  .Dropdown-menu {
+    display: none;
+    margin-top: 500px;
+    width: 100%;
+    height: auto;
+    font-family: "Questrial", sans-serif;
+    background: #fff;
+    opacity: 0.9;
+  }
+  .DropdownList a {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    font-size: 22px;
+    text-align: left;
+    padding: 40px;
+    margin: auto;
+    color: #242424;
+    border-bottom: 1px solid #cecece;
+  }
+  .DropdownList a:hover {
+    color: #ff0000;
+    transition: all 0.3s ease-in-out;
+  }
+  /* END OF Hamburger Design*/
+
+  /* Banner */
+  .hero-container {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-image: url("../img/LandingPage-IMG/LandingPage.png");
+    padding-bottom: 100px;
+  }
+  .hero-text-container {
+    width: 90%;
+    height: auto;
+  }
+  /* End of banner */
+
+  .footer-nav-ul {
+    display: none;
+  }
+
+  .bottom-left-h4 {
+    font-size: 8px;
+    width: 60%;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+  .bottom-right {
+    font-size: 8px;
+    width: 30%;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+}
