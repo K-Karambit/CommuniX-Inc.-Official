@@ -386,7 +386,10 @@ textarea {
   font-size: 1.2em;
   font-weight: 400;
   width: fit-content;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772
   border-radius: 10px;
   background-color: #ffe0e0;
   margin: 0.5em;
@@ -396,6 +399,7 @@ textarea {
   background-color: #ffb3b3;
 }
 
+<<<<<<< HEAD
 /*
 span {
   font-family: "Inter", sans-serif;
@@ -407,6 +411,8 @@ span {
 } 
 */
 
+=======
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772
 .bx1 {
   font-size: 2em;
   padding: 1em;

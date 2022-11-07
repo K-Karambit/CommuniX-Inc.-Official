@@ -115,32 +115,56 @@
                     <div class="container-right-content">
                         <a href="info@communixinc.com" class="bx1-a" target="_blank">
                             <i class='bx1 bx bx-link'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Gmail</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                         <a href="https://www.facebook.com/CommuniXInc/" class="bx1-a" target="_blank">
                             <i class='bx1 bx bxl-facebook-circle'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Facebook</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                         <a href="https://twitter.com/cxi_bpo" class="bx1-a" target="_blank">
                             <i class='bx1 bx bxl-twitter'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Twitter</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                         <a href="https://www.instagram.com/cxi_bpo/" class="bx1-a" target="_blank">
                             <i class='bx1 bx bxl-instagram'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Instagram</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                         <a href="https://www.tiktok.com/@cxi_bpo" class="bx1-a" target="_blank">
                             <i class='bx1 bx bxl-tiktok'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Tiktok</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                         <a href="https://www.linkedin.com/company/communix-inc-cxi/" class="bx1-a" target="_blank">
                             <i class='bx1 bx bxl-linkedin'></i>
+<<<<<<< HEAD:public/Contact.php
                             <!-- <span class="bx1-a-span">Linkedin</span> -->
+=======
+                            
+>>>>>>> 5a1ebae4deeaca43e45996716baee4bc9aa27772:html/Contact.html
                         </a>
 
                     </div>
